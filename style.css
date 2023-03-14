@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: "gilroy";
+    height: 500vh;
+    /* overflow-x: hidden; */
+}
+nav{
+    height: 50px;
+    width: 100%;
+    /* background-color: #000; */
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #7b7b7b;
+}
+.first,
+.second{
+    background-color: black;
+    height: 140vh;
+    width: 100%;
+    border-bottom: 1px solid #7b7b7b;
+}
+.first .first-inner{
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+.first .first-inner h1{
+    font-size: 320px;
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    z-index: 50;
+}
+.first .first-inner h1:nth-child(1){
+    top: 6%;
+    left: 7%;
+    font-family: "Voyage";
+}
+.first .first-inner h1:nth-child(2){
+    bottom: 30%;
+    right: 15%;
+    font-family: "Voyage";
+    font-style: italic;
+    letter-spacing: 10px;
+}
+.first .first-inner>h2{
+    position: absolute;
+    font-size: 25px;
+    transform: rotate(-90deg);
+    bottom: 36%;
+    right: 0;
+    z-index: 50;
+    font-family: "Voyage";
+    color: #fff;
+}
+.first .first-inner>p{
+    position: absolute;
+    font-size: 16px;
+    bottom: 28%;
+    right: 18%;
+    z-index: 50;
+    font-family: sans-serif;
+    color: #fff;
+    z-index: 5;
+}
+.main-image{
+    background-color: bisque;
+    height: 680px;
+    width: 580px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+.main-image .inside-image{
+    background-image: url("https://halomedia.com/wp-content/uploads/2022/07/Mugler_SF_07-scaled.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    /* transform: scale(1.3); */
+}
+.main2-image{
+    background-color: bisque;
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    bottom: 10%;
+    left: 14%;
+    z-index: 10;
+    overflow: hidden;
+}
+.main2-image .inside-image{
+    background-image: url("https://halomedia.com/wp-content/uploads/2022/07/2110050000001600082.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    /* transform: scale(1.3); */
+}
+.second-inner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+.second-inner .inner-txt{
+    position: relative;
+    top: 50px;
+    /* background-color: #898888; */
+    height: 60vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.second-inner .inner-txt p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    /* background-color: blueviolet; */
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 50;
+}
+.second-inner .inner-txt img{
+    position: absolute;
+    height: 90px;
+    z-index: 10;
+}
+.second-inner .inner-txt img:nth-child(1){
+    top: 24%;
+    left: 55%;
+}
+.second-inner .inner-txt img:nth-child(2){
+    top: 32%;
+    left: 41%;
+}
+.second-inner .inner-video{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 100%;
+    left: 50%;
+    top: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.second-inner .inner-video video{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    /* background-color: aquamarine; */
+    background-size: cover;
+    background-position: center;
+    scale: 1.8;
+}
+.third{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: "Voyage";
+    line-height: 50px;
+    margin: 10px 40px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.third h1 span{
+    font-style: italic;
+    padding-right: 20px;
+}
+.third .image{
+    height: 120px;
+    width: 200px;
+    /* background-color: aquamarine; */
+    display: inline-block;
+    border-radius: 60px;
+    margin: 0 25px;
+}
+.third h1 .image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third h1:nth-child(1) .image{
+    background-image: url("https://halomedia.com/wp-content/uploads/2022/07/text-thumb.png");
+}
+.third h1:nth-child(2) .image{
+    background-image: url("https://halomedia.com/wp-content/uploads/2022/07/TH112.jpeg");
+}
+.fourth{
+    height: 80vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth .fourth-inner{
+    width: 50%;
+    height: 100%;
+    /* background-color: #7b7b7b; */
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.fourth-inner h5{
+    font-size: 20px;
+}
+.fourth-inner p{
+    font-size: 22px;
+}
+.fourth-inner .line{
+    height: 200px;
+    width: 1px;
+    border: 1px solid #666666;
+}
+
+/* 
+.fifth{
+    height:100vh;
+    width: 100%;
+}
+
+.fifth .fifth-inner{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(121, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fifth .fifth-inner .inner-box2{
+    height: 520px;
+    width: 400px;
+    background-color: rgb(127, 189, 255);
+}
+
+.fifth .fifth-inner .inner-box2{
+    position: relative;
+    z-index: 50;
+}
+.fifth .fifth-inner .inner-box1,
+.fifth .fifth-inner .inner-box3
+{
+    z-index: 20;
+    position: relative;
+    height: 460px;
+    width: 350px;
+    background-color: rgb(131, 64, 64);
+}
+.fifth .fifth-inner .inner-box1 h2,
+.fifth .fifth-inner .inner-box2 h2,
+.fifth .fifth-inner .inner-box3 h2{
+    font-size: 70px;
+    position: absolute;
+    font-family: "Voyage";
+    font-weight: 100;
+    color: #fff;
+
+}
+
+.fifth .fifth-inner .inner-box1 h2:nth-child(1),
+.fifth .fifth-inner .inner-box3 h2:nth-child(1)
+{
+    top: -10%;
+    left: 2%;
+}
+.fifth .fifth-inner .inner-box1 h2:nth-child(2),
+.fifth .fifth-inner .inner-box3 h2:nth-child(2)
+{
+    bottom: -8%;
+    right: 2%;
+}
+
+.fifth .fifth-inner .inner-box2 h2:nth-child(1){
+    top: -22%;
+    left: 7%;
+    font-size: 135px;
+}
+.fifth .fifth-inner .inner-box2 h2:nth-child(2){
+    bottom: -14%;
+    left: 18%;
+    font-size: 135px;
+}
+
+.fifth .fifth-inner .inner-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.inner-box1{
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/08/Gucci-Aria.jpg);
+}
+.inner-box2{
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/Z1935_SFX_CINDY_09_124_v2__WEB-1.jpg);
+}
+.inner-box3{
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/07/BURBERRY_SS22_CONSTELLATIONS_RGB_CROPPED_04-2.jpg);
+}
+.inner-box img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+} */
+
+.sixth{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sixth .blank{
+    height: 100%;
+    width: 35%;
+    /* background-color: rgb(118, 193, 137); */
+    overflow: hidden;
+    position: relative;
+}
+.sixth .blank .blank-img{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    bottom: -5%;
+    background-image: url(	https://halomedia.com/wp-content/uploads/2022/07/BURBERRY_SS22_CONSTELLATIONS_RGB_CROPPED_04-1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 1000px;
+    border-top-left-radius: 1000px;
+}
+
+.sixth>h1{
+    font-size: 250px;
+    position: absolute;
+    color: #fff;
+    font-style: oblique;
+    z-index: 50;
+    font-weight: 100;
+    font-family: "Voyage";
+}
+.sixth h1:nth-child(1){
+    top: 25%;
+    left: 18%;
+}
+.sixth h1:nth-child(2){
+    top: 50%;
+    right: 18%;
+}
+.sixth>p{
+    position: absolute;
+    color: #fff;
+    bottom: -25%;
+    width: 30%;
+    text-align: center;
+}
+.sixth>a{
+    padding: 10px 15px;
+    color: #fff;
+    position: absolute;
+    bottom: -25%;
+    font-size: 20px;
+}
+
+
+.logo-txt{
+    margin-top: 25vh;
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-txt img,
+footer .top .fourth img{
+    height: 40px;
+}
+.seventh{
+    height: 250vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    position: relative;
+}
+.seventh .blur-img{
+    height: 100%;
+    width: 100%;
+    filter: blur(4px);
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/10/Gucci-Aria-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seventh .seventh-inner{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seventh .seventh-inner .sm-image{
+    position: relative;
+    height: 80%;
+    width: 30%;
+    /* background-color: blueviolet; */
+    background-image: url(https://halomedia.com/wp-content/uploads/2022/10/Gucci-Aria-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seventh .seventh-inner .sm-image h1:nth-child(1){
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 300px;
+    font-weight: 300;
+    font-family: "Voyage";
+}
+.seventh .seventh-inner .sm-image h1:nth-child(2){
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 300px;
+    font-weight: 300;
+    font-family: "Voyage";
+}
+.seventh .seventh-inner .sm-image p{
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    font-family: "gilroy";
+}
+.seventh .seventh-inner .sm-image img{
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+}
+
+footer{
+    border-top: 1px solid #3b3b3b;
+    /* background-color: aquamarine; */
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+footer .top{
+    height: 23vh;
+    width: 100%;
+    /* background-color: #7b7b7b; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+footer .top .foot{
+    height: 100%;
+    width: 20%;
+    /* background-color: burlywood; */
+    color: #fff;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 5px;
+    position: relative;
+    text-align: center;
+}
+footer .top .third,
+footer .top .fourth
+{
+    padding: 0px;
+}
+/* footer .btm{
+    height: 12vh;
+    width: 100%;
+    background-color: #ba7d7d;
+} */
